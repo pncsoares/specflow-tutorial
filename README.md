@@ -34,6 +34,51 @@ Go to the project directory
   cd specflow-tutorial
 ```
 
+# Build
+
+## Using IDE
+
+Click in the `Build` button
+
+## Using CLI
+
+Open terminal and execute the following commands:
+
+```bash
+# run in SpecFlowCalculator directory
+dotnet build
+```
+
+# Test
+
+## Using IDE
+
+Click in `Run all tests` button
+
+## Using CLI
+
+Open terminal and execute the following commands:
+
+```bash
+# run in SpecFlowCalculator directory
+dotnet test
+```
+
+## Generate test results
+
+> You need to have livingdoc installed in your computer
+
+Open terminal and execute the following commands:
+
+```bash
+# run in SpecFlowCalculator directory
+livingdoc test-assembly SpecFlowCalculator.Specs/bin/Debug/net6.0/SpecFlowCalculator.Specs.dll -t SpecFlowCalculator.Specs/bin/debug/net6.0/TestExecution.json
+```
+
+## See test results
+
+Open the `LivingDoc.html` that livingdoc created in the root of `SpecFlowCalculator` directory.
+
 # License
 
 MIT
